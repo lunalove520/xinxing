@@ -26,7 +26,7 @@ var P=[
 {n:"ＣＣ溝通師",a:"cc",ig:"petstalk.c",t:"線上文字•語音溝通／一般・多寵・離世",d:"牠一直叫、突然不吃、開始亂尿——這些行為底下都有原因。\n累積 100+ 場溝通經驗，離世溝通能問得更深，也擅長行為的改善。"},
 {n:"欣欣",a:"xinxin",ig:"eudora_217",t:"線上文字•語音溝通／走失・行為矯正・離世",d:"牠明明有砂盆卻偏要在地板上大便？我家的貓就是這樣，溝通後追蹤一個月改掉了。\n累積 100+ 場溝通，走失幫你抓方向，離世幫你解開心裡的遺憾。"},
 {n:"緣緣",a:"yuanyuan",ig:"dear.n129",t:"文字・語音／在世溝通",d:"了解毛孩內心需求，知道牠為什麼會亂尿尿、為什麼不愛喝水。\n累積 17 場寵物溝通。"},
-{n:"小月",a:"xiaoyue",ig:"hearpaw213",t:"文字・語音／在世・離世・找寵",d:"透過主人的配合，順利找到寵物。\n累積練習溝通 105 隻寵物。"},
+{n:"小月",a:"xiaoyue",ig:"hearpaw213",t:"文字・語音／在世・離世・找寵",d:"透過主人的配合，順利找到寵物。\n累積超過百個寵物溝通個案。"},
 {n:"雅竹",a:"yazhu",ig:"yang86o311",t:"",d:""}];
 for(var i=P.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var x=P[i];P[i]=P[j];P[j]=x}
 document.getElementById('list').innerHTML=P.map(function(p){return '<a class="card" href="https://www.instagram.com/'+p.ig+'/" target="_blank" rel="noopener"><img class="av" src="av/'+p.a+'.jpg" alt="'+p.n+'"><div><div class="nm">'+p.n+'</div>'+(p.t?'<div class="tt">'+p.t+'</div>':'')+(p.d?'<div class="ds">'+p.d+'</div>':'')+'<div class="hd">IG @'+p.ig+'</div></div></a>'}).join('');
