@@ -20,13 +20,16 @@ a.card{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px s
 <p class="note">每次打開，排列順序都不一樣</p>
 </main><script>
 var P=[
-{n:"Yura",a:"yura",ig:"yura_vvvvvv",t:"線上溝通／一般・多寵・離世・找寵",d:"摯愛鸚鵡離世，是我走上陪伴離世與安樂善終這條路的起點。\n累積完成 260+ 場寵物溝通，結合插畫創作，留下毛孩獨一無二的生命紀錄。"},
+{n:"Yura",a:"yura",ig:"yura_vvvvvv",t:"視訊・文字・語音／一般・多寵・離世・找寵",d:"毛孩有心事？找協調委員 Yura！透過寵物溝通，傾聽毛孩心聲，協調毛孩與飼主、毛孩彼此的大小事，讓彼此多一份理解。
+累積 400+ 場寵物溝通經驗，客製手繪似顏繪，珍藏毛孩回憶！"},
 {n:"Mooz",a:"mooz",ig:"mooz.soul",t:"線上文字溝通／在世・離世",d:"離世溝通得到明確的訊息，主人照著去找，在收容所網站遇見轉世回來的牠。\n也曾問出毛孩夜裡不停叫喚的原因，釐清之後就改善了。"},
 {n:"Nora",a:"nora",ig:"noraaa_1127",t:"線上文字溝通／一般・離世・走失",d:"曾精準感知現場環境、梳理離家原因，引導走失的牠與主人再次見面。\n累積 300+ 場寵物溝通，擅長傳遞雙方沒說出口的愛，解開彼此心結。"},
 {n:"ＣＣ溝通師",a:"cc",ig:"petstalk.c",t:"線上文字•語音溝通／一般・多寵・離世",d:"牠一直叫、突然不吃、開始亂尿——這些行為底下都有原因。\n累積 100+ 場溝通經驗，離世溝通能問得更深，也擅長行為的改善。"},
 {n:"欣欣",a:"xinxin",ig:"eudora_217",t:"線上文字•語音溝通／走失・行為矯正・離世",d:"牠明明有砂盆卻偏要在地板上大便？我家的貓就是這樣，溝通後追蹤一個月改掉了。\n累積 100+ 場溝通，走失幫你抓方向，離世幫你解開心裡的遺憾。"},
-{n:"緣緣",a:"yuanyuan",ig:"dear.n129",t:"",d:""},
-{n:"小月",a:"xiaoyue",ig:"hearpaw213",t:"",d:""},
+{n:"緣緣",a:"yuanyuan",ig:"dear.n129",t:"文字・語音／在世溝通",d:"了解毛孩內心需求，知道牠為什麼會亂尿尿、為什麼不愛喝水。
+累積 17 場寵物溝通。"},
+{n:"小月",a:"xiaoyue",ig:"hearpaw213",t:"文字・語音／在世・離世・找寵",d:"透過主人的配合，順利找到寵物。
+累積練習溝通 105 隻寵物。"},
 {n:"雅竹",a:"yazhu",ig:"yang86o311",t:"",d:""}];
 for(var i=P.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var x=P[i];P[i]=P[j];P[j]=x}
 document.getElementById('list').innerHTML=P.map(function(p){return '<a class="card" href="https://www.instagram.com/'+p.ig+'/" target="_blank" rel="noopener"><img class="av" src="av/'+p.a+'.jpg" alt="'+p.n+'"><div><div class="nm">'+p.n+'</div>'+(p.t?'<div class="tt">'+p.t+'</div>':'')+(p.d?'<div class="ds">'+p.d+'</div>':'')+'<div class="hd">IG @'+p.ig+'</div></div></a>'}).join('');
